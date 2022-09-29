@@ -8,7 +8,6 @@ const Main = () => {
         <div className='shop-part'>
             
             <div className="products-part">
-                
                 <Products></Products>
             </div>
             <div className="cart-part">

@@ -9,3 +9,15 @@
     gap: 30px;
     margin: 50px;
 }
+
+@media screen and (max-width: 767px){
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
