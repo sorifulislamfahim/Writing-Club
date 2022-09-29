@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Cart from '../Cart/Cart';
 import Products from '../Products/Products';
 import './Main.css'
 
@@ -11,7 +12,7 @@ const Main = () => {
                 <Products></Products>
             </div>
             <div className="cart-part">
-                <h4>Soriful Islam</h4>
+                <Cart></Cart>
             </div>
         </div>
     );

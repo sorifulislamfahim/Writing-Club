@@ -12,11 +12,7 @@
 
 @media screen and (max-width: 767px) {
     .shop-part{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .products-part{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: block;
+        margin-left: 50px;
     }
 }
