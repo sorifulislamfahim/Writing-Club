@@ -1,7 +1,9 @@
 
 import { useEffect, useState } from 'react';
 import './Cart.css';
-import logo from './my-bg2.png'
+import logo from './my-bg2.png';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 
 
@@ -9,6 +11,10 @@ const Cart = (props) => {
     console.log(props);
 
     const [times, setTimes] = useState([0])
+
+    const notify = () => {
+        toast("Wow so easy!")
+    };
 
     useEffect (() => {
         const getData = localStorage.getItem('breakTime')
@@ -63,7 +69,10 @@ const addToBreak = props => {
                 <h4>Break Time</h4>
                 <p><small><span>{times}</span> seconds</small></p>
             </div>
-            <button className='active-button'>Activity Completed</button>
+            <div>
+                <button onClick={notify} className='active-button'>Activity Completed</button>
+                <ToastContainer />
+            </div>
         </div>
     );
 };
