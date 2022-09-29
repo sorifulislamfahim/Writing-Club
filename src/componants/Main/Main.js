@@ -6,8 +6,9 @@ import './Main.css'
 const Main = () => {
     return (
         <div className='shop-part'>
+            
             <div className="products-part">
-                <h2>Select Today Practice</h2>
+                
                 <Products></Products>
             </div>
             <div className="cart-part">
