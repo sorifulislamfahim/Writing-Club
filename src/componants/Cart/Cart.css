@@ -1,7 +1,18 @@
 
+.cart-container{
+    padding-left: 20px;
+    background-color: burlywood;
+}
 
 .container{
     margin-top: 0;
+    margin-left: 20px;
+    display: flex;
+    text-align: center;
+}
+.container img{
+    height: 50px;
+    width: 50px;
 }
 .information h5{
     margin-top: 0;
@@ -74,4 +85,8 @@
 
 .active-button:hover{
     background-color: crimson;
+}
+.profile{
+    height: 50px;
+    width: 50px;
 }

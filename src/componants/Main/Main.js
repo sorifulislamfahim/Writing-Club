@@ -6,8 +6,7 @@ import './Main.css'
 
 const Main = () => {
     return (
-        <div className='shop-part'>
-            
+        <div className='shop-part'>      
             <div className="products-part">
                 <Products></Products>
             </div>
