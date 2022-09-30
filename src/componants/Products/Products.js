@@ -7,17 +7,20 @@ import './Products.css'
 const Products = () => {
     const [products, setProducts] = useState([]);
 
+
    useEffect( () =>{
     fetch('data.json')
     .then(res => res.json())
     .then(data => setProducts(data))
    } ,[]);
 
-   const addToCart = (props) => {
+   const AddItem = (props) => {
     // console.log(props);
-    <Cart time={props}></Cart>
-
+    const getTime = props;
+    // console.log(getTime);
+    <Cart getTime={getTime}></Cart>
    }
+
 
     return (
         <div>
@@ -27,7 +30,8 @@ const Products = () => {
                 products.map(product => <Product 
                     key={product.id}
                     product={product}
-                    addToCart={addToCart}
+                    AddItem={AddItem}
+        
                 ></Product>)
             }
             </div>

@@ -3,10 +3,12 @@ import './Product.css'
 
 const Product = (props) => {
     const {name, forthis, picture, about, time} = props.product;
+    // console.log(props.product);
    
- 
-    const addToCart = props.addToCart;
-    console.log(addToCart.time)
+    const addItem = props.AddItem;
+    // console.log(addItem);
+    
+   
     
     return (
         <div className='product'>
@@ -16,7 +18,7 @@ const Product = (props) => {
                 <p> {about}</p>
                 <h4>For Age: {forthis}</h4>
                 <h4>Time Requarement: {time}s</h4>
-                <button onClick={ () => addToCart(time)} className='add-button'>Add To List</button>
+                <button onClick={() => addItem(time)} className='add-button'>Add To List</button>
             </div>
         </div>
     );
