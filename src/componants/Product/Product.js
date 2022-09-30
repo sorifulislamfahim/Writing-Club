@@ -3,8 +3,10 @@ import './Product.css'
 
 const Product = (props) => {
     const {name, forthis, picture, about, time} = props.product;
+   
  
     const addToCart = props.addToCart;
+    console.log(addToCart.time)
     
     return (
         <div className='product'>

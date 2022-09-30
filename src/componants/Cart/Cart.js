@@ -8,7 +8,9 @@ import 'react-toastify/dist/ReactToastify.css'
 
 
 const Cart = (props) => {
-    console.log(props);
+    // console.log(props);
+    const {cart} = props;
+    console.log(cart)
 
     const [times, setTimes] = useState([0])
 
