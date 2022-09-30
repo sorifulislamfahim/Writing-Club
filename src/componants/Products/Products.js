@@ -14,7 +14,6 @@ const Products = () => {
    } ,[]);
 
    const addToCart = (props) => {
-    // console.log(props, 'Products');
     <Cart time={props}></Cart>
 
    }
